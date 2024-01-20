@@ -1,0 +1,65 @@
+/* BusSeatBooking.css */
+
+.bus-seat-booking {
+  text-align: center;
+  /* margin: 20px; */
+}
+
+.seat-container {
+  display: grid;
+  grid-template-columns: repeat(10, 0fr); /* 10 columns */
+  grid-template-rows: repeat(4, 0fr); /* 4 rows */
+  /* grid-gap: 2px; */
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.radio-label {
+  margin-right: 100px;
+  margin-bottom: 30px;
+  color: #fff; /* Adjust color as needed */
+}
+
+.radio-label input[type="radio"] {
+  transform: scale(2.0); /* Adjust the scale factor as needed */
+  margin-right: 10px; /* Add some spacing between the radio button and the label */
+}
+
+.card {
+  /* width: 50%; */
+  margin-left: 10px;
+}
+
+.seat-container > :nth-child(n+11):nth-child(-n+20) {
+  margin-bottom: 25px;
+}
+
+.seat-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.seat.selected {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.selected-seats {
+  margin-top: 20px;
+}
+
+.form{
+  margin-left: 150px;
+}
